@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyProject.Data;
-using MyProject.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Models.Data;
+using Models.Models;
 
 namespace Business;
 
