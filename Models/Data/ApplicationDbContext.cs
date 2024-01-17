@@ -7,35 +7,76 @@ public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext()
     {
-        
     }
     public ApplicationDbContext(DbContextOptions options) : base(options)
     {
     }
 
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer(@"Server=.;DataBase=InfoTable;Encrypt=False;Integrated Security=True", 
-            Options => Options.EnableRetryOnFailure());
-    }
-
-    public DbSet<Info> infos { get; set; }
-    //public DbSet<InfoDetails> details { get; set; }
+    public DbSet<Country> Countries { get; set; }
+    public DbSet<City> Cities { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Info>().HasData(
-            new Info
+        modelBuilder.Entity<Country>().HasData(
+            new Country
             {
                 Id = 1,
                 Name = "Iran"
             },
-
-            new Info
+            new Country
             {
                 Id = 2,
                 Name = "France"
+            },
+            new Country
+            {
+                Id = 3,
+                Name = "US"
+            }
+        );
+
+        modelBuilder.Entity<City>().HasData(
+            new City
+            {
+                Id = 1,
+                Name = "Tehran",
+                CountryId = 1
+            },
+            new City
+            {
+                Id = 2,
+                Name = "Shiraz",
+                CountryId = 1
+            },
+            new City
+            {
+                Id = 3,
+                Name = "Tabriz",
+                CountryId = 1
+            },
+            new City
+            {
+                Id = 4,
+                Name = "Paris",
+                CountryId = 2
+            },
+            new City
+            {
+                Id = 5,
+                Name = "Lyon",
+                CountryId = 2
+            },
+            new City
+            {
+                Id = 6,
+                Name = "NewYork",
+                CountryId = 3
+            },
+            new City
+            {
+                Id = 7,
+                Name = "Washington DC",
+                CountryId = 3
             }
         );
     }
