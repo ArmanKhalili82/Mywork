@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Jowhareh_galleries_2_poster_99a9484c-8505-4250-ac26-9c848a39caa2.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_5_poster_24691af5-5db6-49c2-a775-6ce55ab66bc3.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_5_poster_f112e601-a15b-42e0-a5f3-18794bbd5e57.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_8_poster_80fa1d4d-ea56-4a85-9b20-4324869f97c7.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_poster_03b7ab98-9ec2-41b5-ab18-31342c942e6b.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_poster_98ce2ef6-40bd-4ce1-956e-5d064d16bd33.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_poster_aa4f9933-ca7f-4c86-806a-a8f2db68c822.jpeg" />
+    <None Include="wwwroot\images\Jowhareh_galleries_poster_fd0129ab-e071-4309-8dfb-df46d17af7fa.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+  </ItemGroup>
+
+</Project>

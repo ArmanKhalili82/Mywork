@@ -1,0 +1,46 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+button {
+    width: 3em;
+    height: 2em;
+}
+
+.photoround {
+    clip-path: polygon(6% 36%, 5% 15%, 0 0, 100% 0, 94% 12%, 95% 65%, 96% 85%, 95% 93%, 100% 100%, 0 100%, 5% 85%, 6% 59%);
+}
+
+.cardbodyimg {
+    background: url("../images/green.svg") no-repeat;
+    font-size: .7rem;
+}
+
+.textcard {
+    font-size: .7rem;
+}
+
+.textonimage {
+    position: absolute;
+    top: 70%;
+    right: 30%;
+}
